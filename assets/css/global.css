@@ -1,0 +1,272 @@
+@import url(./reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* header hissesi */
+.header {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #22c1c3, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    padding: 20px;
+    justify-content: space-between;
+}
+.sol-teref {
+    display: flex;
+}
+.sol-teref h1 {
+    color: cadetblue;
+    font-size: 30px;
+}
+/* Əsas səhifədə solda Ticarət yazısın buttonu və stili */
+.sol-teref button {
+    position: relative;
+    padding: 15px 45px;
+    background: #FEC195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 1px solid #FEC195;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+  }
+  .header-linkler {
+    font-weight: 700;
+    font-size: 17px;
+    
+  }
+  .header-linkler a {
+    padding-left: 30px;
+    color: #234567;
+
+  }
+  .header-linkler a:hover {
+    color: #fff;
+  }
+  .header input {
+    border-radius: 10px;
+    outline: none;
+    border-style: double;
+    padding: 5px;
+  }
+  /* header son */
+  /* button stilin baslangici */
+  button:hover {
+    border: 1px solid #f3b182;
+    background: linear-gradient(85deg, #FEC195, #fcc196, #fabd92, #fac097, #fac39c);
+    animation: wind 2s ease-in-out infinite;
+  }
+  
+  @keyframes wind {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    0% {
+      background-position: 50% 100%;
+    }
+  
+    0% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .icon-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    transform-origin: 0 0;
+    transform: rotate(10deg);
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+  }
+  
+  button:hover .icon-1 {
+    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+    transform: rotate(10deg);
+  }
+  
+  @keyframes slay-1 {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .icon-2 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 12px;
+    transform-origin: 50% 0;
+    transform: rotate(10deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+  }
+  
+  button:hover .icon-2 {
+    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-2 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(15deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  .icon-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    transform-origin: 50% 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+  }
+  
+  button:hover .icon-3 {
+    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+  }
+  
+  @keyframes slay-3 {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    50% {
+      transform: rotate(-5deg);
+    }
+  
+    100% {
+      transform: rotate(0);
+    }
+  }
+  /* Ticarət buttonun qurtarmağı */
+.header-linkler {
+   padding-top: 18px;
+}
+.sag-teref {
+    padding-top: 5.5px;
+}
+.sol-teref .fa-bag-shopping {
+    color: #5090f0;
+}
+/* daxil ol buttonun stilin basliqi */
+.sag-teref .daxil-ol {
+    border: none;
+ color: #fff;
+ background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+ border-radius: 20px;
+ background-size: 100% auto;
+ font-family: inherit;
+ font-size: 17px;
+ padding: 0.6em 1.5em;
+}
+
+button:hover {
+ background-position: right center;
+ background-size: 200% auto;
+ -webkit-animation: pulse 2s infinite;
+ animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+ 0% {
+  box-shadow: 0 0 0 0 #05bada66;
+ }
+
+ 70% {
+  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+ }
+
+ 100% {
+  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+ }
+}
+/* sag terefde daxil ol buttonun stilin sonu */
+/* Giris hissesi butonu ve stili */
+.giris .cta {
+        position: relative;
+        margin: auto;
+        padding: 12px 18px;
+        transition: all 0.2s ease;
+        border: none;
+        background: none;
+       }
+       
+       .cta:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: 50px;
+        background: #b1dae7;
+        width: 45px;
+        height: 45px;
+        transition: all 0.3s ease;
+       }
+       
+       .cta span {
+        position: relative;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        color: #234567;
+       }
+       
+       .cta svg {
+        position: relative;
+        top: 0;
+        margin-left: 10px;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke: #234567;
+        stroke-width: 2;
+        transform: translateX(-5px);
+        transition: all 0.3s ease;
+       }
+       
+       .cta:hover:before {
+        width: 100%;
+        background: #b1dae7;
+       }
+       
+       .cta:hover svg {
+        transform: translateX(0);
+       }
+       
+       .cta:active {
+        transform: scale(0.95);
+       }
+/* giris butonu stilin sonu */
+/* header media start */
+
+/* header media end */
+
+/* section hissesi start */
+.orta-hisse video {
+  width: 100%;
+}
+/* section hissesi end */
+
